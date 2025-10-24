@@ -8,96 +8,87 @@
     <style>
         body {
             font-family: 'Montserrat', Arial, sans-serif;
-            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-            color: #282947;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #24252A;
             margin: 0;
             padding: 0;
         }
         header {
-            background: linear-gradient(90deg, #5179df 0%, #43e97b 100%);
+            background: linear-gradient(90deg, #7F7FD5, #86A8E7, #91EAE4);
             color: #fff;
             text-align: center;
-            padding: 2.3em 1em 2em 1em;
-            box-shadow: 0 6px 24px 0 rgba(29,59,99,0.08);
+            padding: 2.5em 1.2em 2em 1.2em;
         }
         header h1 {
-            margin: 0 0 8px 0;
-            font-size: 2.45em;
-            letter-spacing: 1.5px;
-            line-height: 1.13;
+            margin: 0 0 0.5em 0;
+            font-size: 2.4em;
+            letter-spacing: 1px;
         }
         header p {
-            font-size: 1.28em;
-            margin: 0 0 0.6em 0;
-            color: #f2f2f2;
+            font-size: 1.25em;
+            margin: 0 0 0.7em 0;
         }
         .section {
             max-width: 900px;
-            margin: 2.5em auto;
+            margin: 2.3em auto;
             background: #fff;
-            border-radius: 22px;
-            box-shadow: 0 8px 40px 0 rgba(67, 80, 100, 0.09);
-            padding: 2.7em 2.5em 2.3em 2.5em;
-            line-height: 1.7;
-            transition: box-shadow 0.2s;
-        }
-        .section:hover {
-            box-shadow: 0 14px 80px 0 rgba(67,80,100,0.16);
+            border-radius: 18px;
+            box-shadow: 0 6px 32px 0 rgba(67, 80, 100, 0.09);
+            padding: 2.4em 2.2em 2em 2.2em;
         }
         h2 {
-            color: #1563ac;
-            margin-top: 0.2em;
-            margin-bottom: 0.7em;
+            color: #393e7a;
+            margin-top: 0;
         }
         h3 {
-            color: #0d8ad9;
-            margin-bottom: 0.55em;
+            color: #1877f2;
         }
         .links a {
-            color: #1962e6;
+            color: #1e88e5;
             font-weight: 600;
             text-decoration: none;
-            padding-right: 1.2em;
         }
         .links a:hover {
             text-decoration: underline;
-            color: #0d8ad9;
         }
         ul, ol {
-            margin: 0 0 1.16em 1.4em;
-            font-size: 1.05em;
+            margin: 0 0 1.3em 1.3em;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 1.7em;
-            background: #f5f7fa;
-            border-radius: 4px;
-            overflow: hidden;
+            margin-bottom: 2em;
         }
         th, td {
-            border: 1px solid #dae5f7;
-            padding: 0.7em 1em;
+            border: 1px solid #c3cfe2;
+            padding: 0.75em 1em;
             text-align: left;
-            font-size: 1.01em;
         }
         th {
-            background: #eaf4fa;
+            background: #f5f7fa;
         }
-        tr:nth-child(even){
-            background: #f9fbfd;
-        }
-        .conclusion, .promo {
-            background: #e4f7e6;
-            border-left: 7px solid #44b171;
-            padding: 1.15em 1.5em;
+        .conclusion, .promo, .extra-tools {
+            background: #e3f6fc;
+            border-left: 8px solid #1e88e5;
+            padding: 1.2em 1.5em;
             border-radius: 8px;
-            font-size: 1.09em;
-            margin-bottom: 1.35em;
+            font-size: 1.07em;
+            margin-bottom: 1.5em;
         }
-        .promo {
-            background: #feffe4;
-            border-left: 7px solid #ffe25c;
+        .extra-tools {
+            background: #fff3e0;
+            border-left: 8px solid #ff9800;
+        }
+        .tool-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #e0e0e0;
+        }
+        .tool-card h4 {
+            color: #ff9800;
+            margin-top: 0;
         }
         .whatsapp {
             background: #25D366;
@@ -108,18 +99,13 @@
             border-radius: 50px;
             display: inline-block;
             margin-top: 0.6em;
-            box-shadow: 0 4px 20px rgba(37,211,102,0.13);
+            box-shadow: 0 4px 12px rgba(37,211,102, 0.15);
             transition: background 0.2s;
         }
-        .whatsapp:hover {
-            background: #128c7e;
-        }
-        .section strong {
-            color:#345ba2;
-        }
-        @media (max-width: 700px) {
-            .section { padding: 1.3em 0.7em; }
-            table, th, td { font-size: 0.97em; }
+        .whatsapp:hover { background: #128c7e; }
+        @media (max-width: 600px) {
+            .section { padding: 1.2em 0.7em; }
+            table, th, td { font-size: 0.97em;}
         }
     </style>
 </head>
@@ -127,36 +113,36 @@
 <header>
     <h1>Clase Intensiva: Edición y Mejora de Fotos con IA</h1>
     <p>
-        ¡Haz que tus fotos destaquen! Aprende a mejorar, restaurar y transformar tus imágenes con los líderes de la Inteligencia Artificial: <b>Gemini, RunningHub, Qwen.ai y Replicate</b>.
+        ¡Haz que tus fotos destaquen! Aprende a mejorar, restaurar y transformar tus imágenes con los líderes de la Inteligencia Artificial: <strong>Gemini, RunningHub, Qwen.ai y Replicate</strong>.
     </p>
 </header>
 
 <section class="section">
     <h2>¿Por qué es revolucionaria la IA en fotografía?</h2>
     <ul>
-        <li><b>Ahorro de tiempo:</b> Automatización de tareas como retoque, fondo, color y pose.</li>
-        <li><b>Creatividad sin límites:</b> Restaura, colorea, fusiona estilos y crea composiciones únicas.</li>
-        <li><b>Accesibilidad premium:</b> Accede a resultados Pro sin tener un laboratorio ni equipo de alto costo.</li>
-        <li><b>Desafíos éticos:</b> Discusión sobre derechos, originalidad y manipulación en el arte visual.</li>
+      <li><b>Ahorro de tiempo:</b> Automatización de tareas como retoque, fondo, color y pose.</li>
+      <li><b>Creatividad sin límites:</b> Restaura, colorea, fusiona estilos y crea composiciones únicas.</li>
+      <li><b>Accesibilidad premium:</b> Accede a resultados Pro sin tener un laboratorio ni equipo de alto costo.</li>
+      <li><b>Desafíos éticos:</b> Discusión sobre derechos, originalidad y manipulación en el arte visual.</li>
     </ul>
     <div class="links">
-      <b>Referencias y casos:</b>
-      <a href="https://revista.sangregorio.edu.ec/index.php/REVISTASANGREGORIO/article/download/3206/1735/11425" target="_blank">Impacto IA Fotografía</a>
-      <a href="https://www.blogdelfotografo.com/tendencias-edicion-fotografica-2025/" target="_blank">Tendencias edición 2025</a>
-      <a href="https://www.pixpa.com/es/blog/best-ai-photo-editors" target="_blank">Mejores editores IA 2025</a>
+      <b>Referencias y casos:</b><br>
+      <a href="https://revista.sangregorio.edu.ec/index.php/REVISTASANGREGORIO/article/download/3206/1735/11425" target="_blank">Artículo: Impacto IA en fotografía</a><br>
+      <a href="https://www.blogdelfotografo.com/tendencias-edicion-fotografica-2025/" target="_blank">Tendencias edición 2025</a><br>
+      <a href="https://www.pixpa.com/es/blog/best-ai-photo-editors" target="_blank">Mejores editores IA 2025</a><br>
       <a href="https://www.youtube.com/watch?v=hSvr6y7lyCM" target="_blank">Video: edición real con IA</a>
     </div>
     <ul>
-        <li><b>¿Quién usa IA hoy?</b> Studios fotográficos, diseñadores, museos y marcas globales como <b>Adidas</b> (campañas IA), museos restauradores y fotógrafos top de bodas en todo el mundo.</li>
+      <li><b>¿Quién usa IA hoy?</b> Studios fotográficos, diseñadores, museos y marcas globales como <b>Adidas</b> (campañas IA), museos restauradores y fotógrafos top de bodas en todo el mundo.</li>
     </ul>
 </section>
 
 <section class="section">
     <h2>Sesión 1: Edición creativa y automática con Gemini</h2>
     <div class="links">
-        <a href="https://gemini.google.com/?hl=es" target="_blank">Gemini IA</a>
-        <a href="https://ai.studio/apps/drive/12dIdfemunqynsyPy5ZJEr9SBXrOF7PeO" target="_blank">Generador de Prompts por Imagen</a>
-        <a href="https://ai.studio/apps/drive/1WwpfwS-ZOA_KU8KBtzTchWSF5N1FIzSe" target="_blank">Creador de Fondos Profesionales - Banana</a>
+        <a href="https://gemini.google.com/?hl=es" target="_blank">Gemini IA</a> |
+        <a href="https://ai.studio/apps/drive/12dIdfemunqynsyPy5ZJEr9SBXrOF7PeO" target="_blank">Generador de Prompts por Imagen</a> |
+        <a href="https://ai.studio/apps/drive/1WwpfwS-ZOA_KU8KBtzTchWSF5N1FIzSe" target="_blank">Creador de Fondos Profesionales - Banana</a> |
         <a href="https://sider.ai/es/blog/ai-tools/gemini-prompts-for-photo-quality-edits-you-can-copy-paste" target="_blank">Sider.AI Banco de Prompts</a>
     </div>
     <h3>Prompts estrella por tipo de foto</h3>
@@ -179,20 +165,20 @@
     </table>
     <h3>Consejos clave:</h3>
     <ul>
-        <li>Define tu objetivo antes de escribir el prompt.</li>
-        <li>Especifica fondo, luz, emociones y resultado esperado.</li>
-        <li>Edita en etapas: fondo → piel → detalles finales.</li>
-        <li>Revisa resolución antes de imprimir o compartir online.</li>
-        <li>Experimenta varias veces y guarda tus mejores resultados.</li>
+      <li>Define tu objetivo antes de escribir el prompt.</li>
+      <li>Especifica fondo, luz, emociones y resultado esperado.</li>
+      <li>Edita en etapas: fondo → piel → detalles finales.</li>
+      <li>Revisa resolución antes de imprimir o compartir online.</li>
+      <li>Experimenta varias veces y guarda tus mejores resultados.</li>
     </ul>
 </section>
 
 <section class="section">
     <h2>Sesión 2: Workflows Avanzados en RunningHub & Qwen.ai</h2>
     <div class="links">
-        <a href="https://www.runninghub.ai/" target="_blank">RunningHub</a>
-        <a href="https://www.runninghub.ai/ai-detail/1907581130097192962" target="_blank">Ultimate Upscale Final v.1</a>
-        <a href="https://www.runninghub.ai/post/1864948603276980225" target="_blank">ComfyUI FLUX UPSCALER</a>
+        <a href="https://www.runninghub.ai/" target="_blank">RunningHub</a> |
+        <a href="https://www.runninghub.ai/ai-detail/1907581130097192962" target="_blank">Ultimate Upscale Final v.1</a> |
+        <a href="https://www.runninghub.ai/post/1864948603276980225" target="_blank">ComfyUI FLUX UPSCALER</a> |
         <a href="https://qwen.ai/" target="_blank">Qwen.ai</a>
     </div>
     <ul>
@@ -205,14 +191,48 @@
 <section class="section">
     <h2>Sesión 3: Replicate – Upscalers IA Pro (30 min)</h2>
     <div class="links">
-        <a href="https://replicate.com/" target="_blank">Replicate</a>
-        <a href="https://replicate.com/philz1337x/crystal-upscaler" target="_blank">Crystal-Upscaler (rostros)</a>
-        <a href="https://replicate.com/bytedance/seedream-4" target="_blank">Seedream-4 (4K upscaling)</a>
+        <a href="https://replicate.com/" target="_blank">Replicate</a> |
+        <a href="https://replicate.com/philz1337x/crystal-upscaler" target="_blank">Crystal-Upscaler (rostros)</a> |
+        <a href="https://replicate.com/bytedance/seedream-4" target="_blank">Seedream-4 (4K upscaling)</a> |
         <a href="https://replicate.com/qwen/qwen-image-edit-plus" target="_blank">Qwen-image-edit-plus</a>
     </div>
     <ul>
         <li>Haz upscaling profesional: sube tu imagen, selecciona el modelo, elige x2/x4, descarga y comparte.</li>
         <li>Comparte tus resultados. Ejemplo de mejoría: <a href="https://www.youtube.com/watch?v=fFyn-ziBM4I" target="_blank">Video comparativo aquí</a>.</li>
+    </ul>
+</section>
+
+<section class="section extra-tools">
+    <h2>🎉 EXTRA: Herramientas Especializadas para Eventos</h2>
+    <p><strong>Plataformas IA dedicadas específicamente a fotografía de quinceañeras, cumpleaños y bodas</strong></p>
+    
+    <div class="tool-card">
+        <h4>QuincesAI - Fotos de Quinceañera con IA</h4>
+        <p><a href="https://quincesai.com" target="_blank">QuincesAI.com</a> es una plataforma especializada en generar fotos de quinceañera con inteligencia artificial. Ofrece una galería completa de ejemplos con diferentes vestidos, poses y escenarios que puedes ver en su <a href="https://quincesai.com/fotos-quinceanera.html" target="_blank">sección de fotos</a>.</p>
+        <p><strong>Características:</strong> Crea fotos profesionales sin necesidad de fotógrafo, con opciones para personalizar vestidos, poses y fondos.</p>
+    </div>
+
+    <div class="tool-card">
+        <h4>DreamFace AI - Fotos de Cumpleaños</h4>
+        <p><a href="https://dreamfaceapp.com" target="_blank">DreamFaceApp.com</a> tiene una herramienta específica para crear fotos de cumpleaños. Permite subir una foto y la IA automáticamente agrega elementos festivos como pasteles, velas y globos.</p>
+        <p><strong>Ideal para:</strong> Crear contenido de cumpleaños para redes sociales. Ofrece descargas gratuitas.</p>
+    </div>
+
+    <div class="tool-card">
+        <h4>Bylo AI - Generador de Fotos de Boda</h4>
+        <p><a href="https://bylo.ai/es/features/ai-wedding-generator" target="_blank">Bylo.ai</a> es un generador gratuito de fotos de boda con IA. Transforma fotos ordinarias en retratos de boda únicos y memorables, perfectos para revivir el gran día con creatividad.</p>
+    </div>
+
+    <div class="tool-card">
+        <h4>PhotoAI Studio - Fotos de Boda Profesionales</h4>
+        <p><a href="https://photoaistudio.com" target="_blank">PhotoAIStudio.com</a> ofrece ejemplos de fotos de boda generadas por IA. Permite transformar selfies en impresionantes fotografías de boda utilizando tecnología de inteligencia artificial.</p>
+    </div>
+
+    <h3>📚 Tutoriales y Prompts para Eventos</h3>
+    <ul>
+        <li><strong>Vanguardia.com.mx:</strong> <a href="https://vanguardia.com.mx" target="_blank">Guía completa con prompts específicos</a> para crear sesiones fotográficas de cumpleaños personalizadas. Incluye ejemplos detallados de prompts para cumpleaños elegantes con globos orgánicos, letreros de neón y detalles de confeti dorado.</li>
+        <li><strong>Tutorial YouTube - Natuner Dak:</strong> Tutorial completo de edición de fotos de cumpleaños usando Google Gemini AI con prompts específicos. Incluye ejemplos de retratos de estudio con pasteles, velas en forma de números y vestidos elegantes.</li>
+        <li><strong>Nav Dristi:</strong> Colección de 15 prompts virales para edición de fotos de cumpleaños en Gemini AI. Diseñados para crear retratos de calidad DSLR con pasteles, globos y ambiente festivo.</li>
     </ul>
 </section>
 
@@ -223,10 +243,10 @@
         <li>Compara y comparte tus resultados (<b>antes/después</b>). Usa los prompts y combina modelos.</li>
     </ul>
     <div class="conclusion">
-        <b>Recursos para ti:</b>
+        <b>Recursos para ti:</b> <br>
         <a href="https://unsplash.com/" target="_blank">Unsplash</a>,
         <a href="https://pexels.com/" target="_blank">Pexels</a>,
-        <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
+        <a href="https://pixabay.com/" target="_blank">Pixabay</a>,<br>
         Comunidad: <a href="https://www.reddit.com/r/comfyui/top/" target="_blank">Reddit: ComfyUI</a>,
         <a href="https://sider.ai/es/blog/ai-tools/gemini-prompts-for-photo-quality-edits-you-can-copy-paste" target="_blank">Sider.AI</a>
     </div>
@@ -235,8 +255,8 @@
 <section class="section promo">
     <b>¿Quieres llevar tu aprendizaje al siguiente nivel?</b><br>
     CONTAMOS CON MÁS PRODUCTO Y COMPLEMENTA LO APRENDIDO HOY:<br>
-    <a href="https://go.hotmart.com/X101704097W" target="_blank">Scrip Nano Banana Photoshop</a><br>
-    <a href="https://go.hotmart.com/R99225481F" target="_blank">Curso Mejora Calidad de fotos</a>
+    <a href="https://go.hotmart.com/X101704097W" target="_blank">Curso Premium IA X101704097W</a><br>
+    <a href="https://go.hotmart.com/R99225481F" target="_blank">Curso Especialista R99225481F</a>
     <br><br>
     Asesoría y consultas vía WhatsApp:
     <a class="whatsapp" href="https://wa.me/51975068775" target="_blank">Escríbenos al +51 975068775</a>
@@ -244,4 +264,3 @@
 
 </body>
 </html>
-
