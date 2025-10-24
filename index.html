@@ -20,11 +20,6 @@
             padding: 2.3em 1em 2em 1em;
             box-shadow: 0 6px 24px 0 rgba(29,59,99,0.08);
         }
-        header img.logo {
-            width: 62px;
-            height: 62px;
-            margin-bottom: 0.5em;
-        }
         header h1 {
             margin: 0 0 8px 0;
             font-size: 2.45em;
@@ -36,22 +31,18 @@
             margin: 0 0 0.6em 0;
             color: #f2f2f2;
         }
-        .hero-img {
-            width: 96%;
-            max-width: 425px;
-            border-radius: 15px;
-            margin: 28px auto 0 auto;
-            display: block;
-            box-shadow: 0 8px 46px 0 rgba(29,59,99,.13);
-        }
         .section {
             max-width: 900px;
             margin: 2.5em auto;
             background: #fff;
-            border-radius: 16px;
+            border-radius: 22px;
             box-shadow: 0 8px 40px 0 rgba(67, 80, 100, 0.09);
             padding: 2.7em 2.5em 2.3em 2.5em;
             line-height: 1.7;
+            transition: box-shadow 0.2s;
+        }
+        .section:hover {
+            box-shadow: 0 14px 80px 0 rgba(67,80,100,0.16);
         }
         h2 {
             color: #1563ac;
@@ -66,9 +57,11 @@
             color: #1962e6;
             font-weight: 600;
             text-decoration: none;
+            padding-right: 1.2em;
         }
         .links a:hover {
             text-decoration: underline;
+            color: #0d8ad9;
         }
         ul, ol {
             margin: 0 0 1.16em 1.4em;
@@ -79,6 +72,8 @@
             border-collapse: collapse;
             margin-bottom: 1.7em;
             background: #f5f7fa;
+            border-radius: 4px;
+            overflow: hidden;
         }
         th, td {
             border: 1px solid #dae5f7;
@@ -119,37 +114,25 @@
         .whatsapp:hover {
             background: #128c7e;
         }
-        .showcase-img {
-            width: 100%;
-            max-width: 680px;
-            border-radius: 15px;
-            margin: 1.4em auto 2.2em auto;
-            display: block;
-            box-shadow: 0 8px 34px 0 rgba(29,59,99,.12);
-        }
         .section strong {
             color:#345ba2;
         }
         @media (max-width: 700px) {
             .section { padding: 1.3em 0.7em; }
-            .hero-img, .showcase-img { max-width: 97vw;}
             table, th, td { font-size: 0.97em; }
         }
     </style>
 </head>
 <body>
 <header>
-    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=400&q=80" class="logo" alt="Icono IA Fotografía"/>
     <h1>Clase Intensiva: Edición y Mejora de Fotos con IA</h1>
     <p>
         ¡Haz que tus fotos destaquen! Aprende a mejorar, restaurar y transformar tus imágenes con los líderes de la Inteligencia Artificial: <b>Gemini, RunningHub, Qwen.ai y Replicate</b>.
     </p>
-    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&w=900&q=80" class="hero-img" alt="Demo edición IA foto"/>
 </header>
 
 <section class="section">
     <h2>¿Por qué es revolucionaria la IA en fotografía?</h2>
-    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=850&q=70" class="showcase-img" alt="Editando imágenes con IA">
     <ul>
         <li><b>Ahorro de tiempo:</b> Automatización de tareas como retoque, fondo, color y pose.</li>
         <li><b>Creatividad sin límites:</b> Restaura, colorea, fusiona estilos y crea composiciones únicas.</li>
@@ -157,10 +140,10 @@
         <li><b>Desafíos éticos:</b> Discusión sobre derechos, originalidad y manipulación en el arte visual.</li>
     </ul>
     <div class="links">
-      <b>Referencias y casos:</b><br>
-      <a href="https://revista.sangregorio.edu.ec/index.php/REVISTASANGREGORIO/article/download/3206/1735/11425" target="_blank">Artículo: Impacto IA en fotografía</a><br>
-      <a href="https://www.blogdelfotografo.com/tendencias-edicion-fotografica-2025/" target="_blank">Tendencias edición 2025</a><br>
-      <a href="https://www.pixpa.com/es/blog/best-ai-photo-editors" target="_blank">Mejores editores IA 2025</a><br>
+      <b>Referencias y casos:</b>
+      <a href="https://revista.sangregorio.edu.ec/index.php/REVISTASANGREGORIO/article/download/3206/1735/11425" target="_blank">Impacto IA Fotografía</a>
+      <a href="https://www.blogdelfotografo.com/tendencias-edicion-fotografica-2025/" target="_blank">Tendencias edición 2025</a>
+      <a href="https://www.pixpa.com/es/blog/best-ai-photo-editors" target="_blank">Mejores editores IA 2025</a>
       <a href="https://www.youtube.com/watch?v=hSvr6y7lyCM" target="_blank">Video: edición real con IA</a>
     </div>
     <ul>
@@ -171,12 +154,11 @@
 <section class="section">
     <h2>Sesión 1: Edición creativa y automática con Gemini</h2>
     <div class="links">
-        <a href="https://gemini.google.com/?hl=es" target="_blank">Gemini IA</a> |
-        <a href="https://ai.studio/apps/drive/12dIdfemunqynsyPy5ZJEr9SBXrOF7PeO" target="_blank">Generador de Prompts por Imagen</a> |
-        <a href="https://ai.studio/apps/drive/1WwpfwS-ZOA_KU8KBtzTchWSF5N1FIzSe" target="_blank">Creador de Fondos Profesionales - Banana</a> |
+        <a href="https://gemini.google.com/?hl=es" target="_blank">Gemini IA</a>
+        <a href="https://ai.studio/apps/drive/12dIdfemunqynsyPy5ZJEr9SBXrOF7PeO" target="_blank">Generador de Prompts por Imagen</a>
+        <a href="https://ai.studio/apps/drive/1WwpfwS-ZOA_KU8KBtzTchWSF5N1FIzSe" target="_blank">Creador de Fondos Profesionales - Banana</a>
         <a href="https://sider.ai/es/blog/ai-tools/gemini-prompts-for-photo-quality-edits-you-can-copy-paste" target="_blank">Sider.AI Banco de Prompts</a>
     </div>
-    <img src="https://images.pexels.com/photos/4427743/pexels-photo-4427743.jpeg?w=900&q=80" class="showcase-img" alt="Gemini IA ejemplo">
     <h3>Prompts estrella por tipo de foto</h3>
     <table>
         <thead>
@@ -208,12 +190,11 @@
 <section class="section">
     <h2>Sesión 2: Workflows Avanzados en RunningHub & Qwen.ai</h2>
     <div class="links">
-        <a href="https://www.runninghub.ai/" target="_blank">RunningHub</a> |
-        <a href="https://www.runninghub.ai/ai-detail/1907581130097192962" target="_blank">Ultimate Upscale Final v.1</a> |
-        <a href="https://www.runninghub.ai/post/1864948603276980225" target="_blank">ComfyUI FLUX UPSCALER</a> |
+        <a href="https://www.runninghub.ai/" target="_blank">RunningHub</a>
+        <a href="https://www.runninghub.ai/ai-detail/1907581130097192962" target="_blank">Ultimate Upscale Final v.1</a>
+        <a href="https://www.runninghub.ai/post/1864948603276980225" target="_blank">ComfyUI FLUX UPSCALER</a>
         <a href="https://qwen.ai/" target="_blank">Qwen.ai</a>
     </div>
-    <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?w=900&q=80" class="showcase-img" alt="Workflow IA avanzado RunningHub">
     <ul>
         <li>Mejora retratos, bodas y fotos restauradas fácilmente.</li>
         <li>Compara resultados al escalar imágenes entre diferentes plataformas.</li>
@@ -224,12 +205,11 @@
 <section class="section">
     <h2>Sesión 3: Replicate – Upscalers IA Pro (30 min)</h2>
     <div class="links">
-        <a href="https://replicate.com/" target="_blank">Replicate</a> |
-        <a href="https://replicate.com/philz1337x/crystal-upscaler" target="_blank">Crystal-Upscaler (rostros)</a> |
-        <a href="https://replicate.com/bytedance/seedream-4" target="_blank">Seedream-4 (4K upscaling)</a> |
+        <a href="https://replicate.com/" target="_blank">Replicate</a>
+        <a href="https://replicate.com/philz1337x/crystal-upscaler" target="_blank">Crystal-Upscaler (rostros)</a>
+        <a href="https://replicate.com/bytedance/seedream-4" target="_blank">Seedream-4 (4K upscaling)</a>
         <a href="https://replicate.com/qwen/qwen-image-edit-plus" target="_blank">Qwen-image-edit-plus</a>
     </div>
-    <img src="https://images.pexels.com/photos/213117/pexels-photo-213117.jpeg?w=900&q=80" class="showcase-img" alt="Ejemplo upscaling IA Replicate">
     <ul>
         <li>Haz upscaling profesional: sube tu imagen, selecciona el modelo, elige x2/x4, descarga y comparte.</li>
         <li>Comparte tus resultados. Ejemplo de mejoría: <a href="https://www.youtube.com/watch?v=fFyn-ziBM4I" target="_blank">Video comparativo aquí</a>.</li>
@@ -243,10 +223,10 @@
         <li>Compara y comparte tus resultados (<b>antes/después</b>). Usa los prompts y combina modelos.</li>
     </ul>
     <div class="conclusion">
-        <b>Recursos para ti:</b> <br>
+        <b>Recursos para ti:</b>
         <a href="https://unsplash.com/" target="_blank">Unsplash</a>,
         <a href="https://pexels.com/" target="_blank">Pexels</a>,
-        <a href="https://pixabay.com/" target="_blank">Pixabay</a>,<br>
+        <a href="https://pixabay.com/" target="_blank">Pixabay</a>,
         Comunidad: <a href="https://www.reddit.com/r/comfyui/top/" target="_blank">Reddit: ComfyUI</a>,
         <a href="https://sider.ai/es/blog/ai-tools/gemini-prompts-for-photo-quality-edits-you-can-copy-paste" target="_blank">Sider.AI</a>
     </div>
